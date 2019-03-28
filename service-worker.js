@@ -65,7 +65,7 @@ function fetchAndCache(url) {
     });
   })
   .catch(function(error) {
-    console.log('Request failed:', error);
+    console.log('Request failed bro:', error);
     // You could return a custom offline 404 page here
   });
 }
