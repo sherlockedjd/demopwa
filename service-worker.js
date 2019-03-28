@@ -42,6 +42,7 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
+    alert('in here bachooo');
     caches.match(event.request)
     .then(function(response) {
       return response || fetchAndCache(event.request);
