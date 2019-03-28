@@ -19,6 +19,7 @@ var filesToCache = [
   '/manifest.json',
   '/scripts/app.js',
   '/styles/inline.css',
+  'images/icons/icon-144x144.png',
   '/images/clear.png',
   '/images/cloudy-scattered-showers.png',
   '/images/cloudy.png',
