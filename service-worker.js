@@ -17,6 +17,7 @@ var filesToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/scripts/app.js',
   '/styles/inline.css',
   '/images/clear.png',
   '/images/cloudy-scattered-showers.png',
