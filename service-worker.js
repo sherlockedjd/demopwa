@@ -75,7 +75,7 @@ function fetchAndCache(url) {
     if (!response.ok) {
       throw Error(response.statusText);
     }
-    return caches.open(CACHE_NAME)
+    return caches.open(cacheName)
     .then(function(cache) {
       cache.put(url, response.clone());
       return response;
