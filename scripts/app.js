@@ -165,30 +165,30 @@
    * freshest data.
    */
   app.getForecast = function(key, label) {
-    var statement = 'select * from weather.forecast where woeid=' + key;
-    var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
-        statement;
+    //var statement = 'select * from weather.forecast where woeid=' + key;
+    //var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
+        //statement;
     // TODO add cache logic here
 
     // Fetch the latest data.
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
-      if (request.readyState === XMLHttpRequest.DONE) {
-        if (request.status === 200) {
-          var response = JSON.parse(request.response);
-          var results = response.query.results;
-          results.key = key;
-          results.label = label;
-          results.created = response.query.created;
-          app.updateForecastCard(results);
-        }
-      } else {
+    //var request = new XMLHttpRequest();
+    //request.onreadystatechange = function() {
+      //if (request.readyState === XMLHttpRequest.DONE) {
+       // if (request.status === 200) {
+         // var response = JSON.parse(request.response);
+          //var results = response.query.results;
+         // results.key = key;
+         // results.label = label;
+         // results.created = response.query.created;
+         //app.updateForecastCard(results);
+        //}
+      //} else {
         // Return the initial weather forecast since no data is available.
         app.updateForecastCard(initialWeatherForecast);
-      }
-    };
-    request.open('GET', url);
-    request.send();
+     // }
+    //};
+   // request.open('GET', url);
+    //request.send();
   };
 
   // Iterate all of the cards and attempt to get the latest forecast data

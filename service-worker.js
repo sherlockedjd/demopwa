@@ -16,6 +16,7 @@ var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [
   '/',
   '/index.html',
+  '/manifest.json',
   '/scripts/app.js',
   '/styles/inline.css',
   '/images/clear.png',
