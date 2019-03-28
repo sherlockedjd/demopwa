@@ -41,6 +41,8 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(event) {
+  alert('in fetch');
+  console.log('in fetch');
   event.respondWith(
     caches.match(event.request)
     .then(function(response) {
