@@ -14,7 +14,7 @@
 
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [
-'index.html'
+'/index.html'
 ];
 
 self.addEventListener('install', function(e) {
