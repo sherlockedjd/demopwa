@@ -58,8 +58,8 @@ function fetchAndCache(url) {
     }
     return caches.open(cacheName)
     .then(function(cache) {
-      console.log('cached a resource');
       cache.put(url, response.clone());
+      console.log('cached a resource',url);
       return response;
     });
   })
