@@ -246,7 +246,8 @@ body {
   padding: 16px;
   position: relative;
   box-sizing: border-box;
-  background: #fff;
+  /*background: #fff;*/
+  background:#fc4f7a;
   border-radius: 2px;
   margin: 16px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
@@ -281,16 +282,16 @@ body {
             flex-grow: 1; }
   .weather-forecast .current .sunset:before {
     content: "Sunset: ";
-    color: #888; }
+    color: #fff; }
   .weather-forecast .current .wind:before {
     content: "Wind: ";
-    color: #888; }
+    color: #fff; }
   .weather-forecast .current .sunrise:before {
     content: "Sunrise: ";
-    color: #888; }
+    color: #fff; }
   .weather-forecast .current .humidity:before {
     content: "Humidity: ";
-    color: #888; }
+    color: #fff; }
   .weather-forecast .current .pollen:before {
     content: "Pollen Count: ";
     color: #888; }
