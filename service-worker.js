@@ -13,7 +13,9 @@
 // limitations under the License.
 
 var cacheName = 'weatherPWA-step-6-1';
-var filesToCache = ['/','/index.html'];
+var filesToCache = ['/demopwa/',
+'/demopwa/index.html'
+];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
