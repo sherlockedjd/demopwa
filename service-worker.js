@@ -14,27 +14,27 @@
 
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = ['/demopwa/scripts/app.js',
-  'demopwa/styles/inline.css',
-  'demopwa/images/clear.png',
-  'demopwa/images/cloudy-scattered-showers.png',
-  'deopwa/images/cloudy.png',
-  'demopwa/images/fog.png',
-  'demopwa/images/ic_add_white_24px.svg',
-  'demopwa/images/ic_refresh_white_24px.svg',
-  'demopwa/images/partly-cloudy.png',
-  'demopwa/images/rain.png',
-  'demopwa/images/scattered-showers.png',
-  'demopwa/images/sleet.png',
-  'demopwa/images/snow.png',
-  'demopwa/images/thunderstorm.png',
-  'demopwa/images/wind.png'];
+  '/demopwa/styles/inline.css',
+  '/demopwa/images/clear.png',
+  '/demopwa/images/cloudy-scattered-showers.png',
+  '/deopwa/images/cloudy.png',
+  '/demopwa/images/fog.png',
+  '/demopwa/images/ic_add_white_24px.svg',
+  '/demopwa/images/ic_refresh_white_24px.svg',
+  '/demopwa/images/partly-cloudy.png',
+  '/demopwa/images/rain.png',
+  '/demopwa/images/scattered-showers.png',
+  '/demopwa/images/sleet.png',
+  '/demopwa/images/snow.png',
+  '/demopwa/images/thunderstorm.png',
+  '/demopwa/images/wind.png'];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
       console.log('[ServiceWorker] Caching app shell');
-  		cache.addAll(filesToCache);
+  		return cache.addAll(filesToCache);
     })
   );
 });
