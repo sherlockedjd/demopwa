@@ -13,25 +13,7 @@
 // limitations under the License.
 
 var cacheName = 'weatherPWA-step-6-1';
-var filesToCache = [
-	'/',
-   '/demopwa',
-   '/demopwa/scripts/app.js',
-  '/demopwa/styles/inline.css',
-  '/demopwa/images/clear.png',
-  '/demopwa/images/cloudy-scattered-showers.png',
-  '/deopwa/images/cloudy.png',
-  '/demopwa/images/fog.png',
-  '/demopwa/images/ic_add_white_24px.svg',
-  '/demopwa/images/ic_refresh_white_24px.svg',
-  '/demopwa/images/partly-cloudy.png',
-  '/demopwa/images/rain.png',
-  '/demopwa/images/scattered-showers.png',
-  '/demopwa/images/sleet.png',
-  '/demopwa/images/snow.png',
-  '/demopwa/images/thunderstorm.png',
-  '/demopwa/images/wind.png'
-  ];
+var filesToCache = [];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
@@ -79,7 +61,7 @@ function fetchAndCache(url) {
     return caches.open(cacheName)
     .then(function(cache) {
       cache.put(url, response.clone());
-      console.log('cached a resource',url);
+      console.log('cached a resource',url.url);
       return response;
     });
   })
