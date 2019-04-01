@@ -13,9 +13,7 @@
 // limitations under the License.
 
 var cacheName = 'weatherPWA-step-6-1';
-var filesToCache = [ 
-  '/',
-  '/demopwa/scripts/app.js',
+var filesToCache = ['/demopwa/scripts/app.js',
   'demopwa/styles/inline.css',
   'demopwa/images/clear.png',
   'demopwa/images/cloudy-scattered-showers.png',
@@ -29,8 +27,7 @@ var filesToCache = [
   'demopwa/images/sleet.png',
   'demopwa/images/snow.png',
   'demopwa/images/thunderstorm.png',
-  'demopwa/images/wind.png'
-  ];
+  'demopwa/images/wind.png'];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
