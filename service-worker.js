@@ -14,6 +14,8 @@
 
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [
+	'/',
+   '/demopwa',
    '/demopwa/scripts/app.js',
   '/demopwa/styles/inline.css',
   '/demopwa/images/clear.png',
