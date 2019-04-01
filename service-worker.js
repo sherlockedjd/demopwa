@@ -14,19 +14,7 @@
 
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [
-   'demopwa/images/clear.png',
-  'demopwa/images/cloudy-scattered-showers.png',
-  'demopwa/images/cloudy.png',
-  'demopwa/images/fog.png',
-  'demopwa/images/ic_add_white_24px.svg',
-  'demopwa/images/ic_refresh_white_24px.svg',
-  'demopwa/images/partly-cloudy.png',
-  'demopwa/images/rain.png',
-  'demopwa/images/scattered-showers.png',
-  'demopwa/images/sleet.png',
-  'demopwa/images/snow.png',
-  'demopwa/images/thunderstorm.png',
-  'demopwa/images/wind.png'
+   'https://sherlockedjd.github.io/demopwa/images/clear.png'
 ];
 
 self.addEventListener('install', function(e) {
