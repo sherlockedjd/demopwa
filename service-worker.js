@@ -14,7 +14,23 @@
 
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [
-   'https://sherlockedjd.github.io/demopwa/images/clear.png'
+   'https://sherlockedjd.github.io/demopwa/',
+  'https://sherlockedjd.github.io/demopwa/index.html',
+  'https://sherlockedjd.github.io/demopwa/scripts/app.js',
+  'https://sherlockedjd.github.io/demopwa/styles/inline.css',
+  'https://sherlockedjd.github.io/demopwa/images/clear.png',
+  'https://sherlockedjd.github.io/demopwa/images/cloudy-scattered-showers.png',
+  'https://sherlockedjd.github.io/demopwa/images/cloudy.png',
+  'https://sherlockedjd.github.io/demopwa/images/fog.png',
+  'https://sherlockedjd.github.io/demopwa/images/ic_add_white_24px.svg',
+  'https://sherlockedjd.github.io/demopwa/images/ic_refresh_white_24px.svg',
+  'https://sherlockedjd.github.io/demopwa/images/partly-cloudy.png',
+  'https://sherlockedjd.github.io/demopwa/images/rain.png',
+  'https://sherlockedjd.github.io/demopwa/images/scattered-showers.png',
+  'https://sherlockedjd.github.io/demopwa/images/sleet.png',
+  'https://sherlockedjd.github.io/demopwa/images/snow.png',
+  'https://sherlockedjd.github.io/demopwa/images/thunderstorm.png',
+  'https://sherlockedjd.github.io/demopwa/images/wind.png'
 ];
 
 self.addEventListener('install', function(e) {
