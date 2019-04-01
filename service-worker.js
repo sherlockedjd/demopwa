@@ -15,21 +15,21 @@
 var cacheName = 'weatherPWA-step-6-1';
 var filesToCache = [ 
   '/',
-  '/scripts/app.js',
-  '/styles/inline.css',
-  '/images/clear.png',
-  '/images/cloudy-scattered-showers.png',
-  '/images/cloudy.png',
-  '/images/fog.png',
-  '/images/ic_add_white_24px.svg',
-  '/images/ic_refresh_white_24px.svg',
-  '/images/partly-cloudy.png',
-  '/images/rain.png',
-  '/images/scattered-showers.png',
-  '/images/sleet.png',
-  '/images/snow.png',
-  '/images/thunderstorm.png',
-  '/images/wind.png'
+  '/demopwa/scripts/app.js',
+  'demopwa/styles/inline.css',
+  'demopwa/images/clear.png',
+  'demopwa/images/cloudy-scattered-showers.png',
+  'deopwa/images/cloudy.png',
+  'demopwa/images/fog.png',
+  'demopwa/images/ic_add_white_24px.svg',
+  'demopwa/images/ic_refresh_white_24px.svg',
+  'demopwa/images/partly-cloudy.png',
+  'demopwa/images/rain.png',
+  'demopwa/images/scattered-showers.png',
+  'demopwa/images/sleet.png',
+  'demopwa/images/snow.png',
+  'demopwa/images/thunderstorm.png',
+  'demopwa/images/wind.png'
   ];
 
 self.addEventListener('install', function(e) {
