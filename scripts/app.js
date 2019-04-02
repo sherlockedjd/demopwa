@@ -402,6 +402,7 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
       reg.addEventListener('onupdatefound', () => {
 
         // An updated service worker has appeared in reg.installing!
+        console.log('found an updated one');
         newWorker = reg.installing;
 
         newWorker.addEventListener('statechange', () => {
@@ -409,6 +410,7 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
           // Has service worker state changed?
           switch (newWorker.state) {
             case 'installed':
+            console.log('new service worker installed');
 
   // There is a new service worker available, show the notification
               if (navigator.serviceWorker.controller) {
