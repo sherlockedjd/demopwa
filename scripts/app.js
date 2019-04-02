@@ -383,6 +383,11 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
 
   let newWorker;
 
+  function showUpdateBar() {
+    let snackbar = document.getElementById('snackbar');
+    snackbar.className = 'show';
+  }
+
   // The click event on the notification
   document.getElementById('reload').addEventListener('click', function(){
     newWorker.postMessage({ action: 'skipWaiting' });
@@ -415,8 +420,9 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
 
   // There is a new service worker available, show the notification
               if (navigator.serviceWorker.controller) {
-                let notification = document.getElementById('notification ');
-    notification .className = 'show';
+               /* let notification = document.getElementById('notification ');
+    notification .className = 'show';*/
+      showUpdateBar();
               }
 
               break;

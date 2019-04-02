@@ -30,6 +30,47 @@
    <link rel="manifest" href="manifest.json">
   <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#2F3BA2">
+  <style>
+    #snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      bottom: 30px;
+    }
+    #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s;
+      animation: fadein 0.5s;
+    }
+    @-webkit-keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+    @keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -167,7 +208,7 @@
       <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
     </svg>
   </div>
-   <div id="notification" style="visibility:hidden">A new version of this app is available. Click <a id="reload">here</a> to update.</div>
+   <div id="snackbar">A new version of this app is available. Click <a id="reload">here</a> to update.</div>
 
   <button class="ad2hs-prompt" style="display=none">Add to home Screen</button>
 
