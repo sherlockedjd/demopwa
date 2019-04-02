@@ -399,7 +399,7 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
   if ('serviceWorker' in navigator) {
     // Register the service worker
     navigator.serviceWorker.register('./service-worker.js').then(reg => {
-      reg.addEventListener('updatefound', () => {
+      reg.addEventListener('onupdatefound', () => {
 
         // An updated service worker has appeared in reg.installing!
         newWorker = reg.installing;
