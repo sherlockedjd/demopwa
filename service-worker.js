@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var cacheName = 'weatherPWA-step-6-7';
+var cacheName = 'weatherPWA-step-6-8';
 /*var filesToCache = [
    'https://sherlockedjd.github.io/demopwa/',
   'https://sherlockedjd.github.io/demopwa/index.html',
