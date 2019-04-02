@@ -381,10 +381,10 @@ function addToHomeScreen() {  var a2hsBtn = document.querySelector(".ad2hs-promp
     app.saveSelectedCities();
   }
 
-  let newWorker;
+  var newWorker;
 
   function showUpdateBar() {
-    let snackbar = document.getElementById('snackbar');
+    var snackbar = document.getElementById('snackbar');
     snackbar.className = 'show';
   }
 
