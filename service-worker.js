@@ -13,7 +13,7 @@
 // limitations under the License.
 
 var cacheName = 'weatherPWA-step-6-1';
-var filesToCache = [
+/*var filesToCache = [
    'https://sherlockedjd.github.io/demopwa/',
   'https://sherlockedjd.github.io/demopwa/index.html',
   'https://sherlockedjd.github.io/demopwa/scripts/app.js',
@@ -31,7 +31,9 @@ var filesToCache = [
   'https://sherlockedjd.github.io/demopwa/images/snow.png',
   'https://sherlockedjd.github.io/demopwa/images/thunderstorm.png',
   'https://sherlockedjd.github.io/demopwa/images/wind.png'
-];
+];*/
+
+var filesToCache=[];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
